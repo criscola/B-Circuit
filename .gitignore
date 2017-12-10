@@ -51,10 +51,10 @@ Debug
 Release
 
 # VS
-.sln
-.vcxproj
-.filters
-.vs/
+**/.sln
+**/.vcxproj
+**/.filters
+**/.vs/
 
 .cproject
 .project
