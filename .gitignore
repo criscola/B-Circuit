@@ -50,6 +50,12 @@ bin
 Debug
 Release
 
+# VS
+.sln
+.vcxproj
+.filters
+.vs/
+
 .cproject
 .project
 .settings
