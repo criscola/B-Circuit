@@ -2,10 +2,10 @@
 
 Create a new directory `build` and run CMake
 ```
-$ mkdir build && cd build
-$ cmake ..
+$ mkdir -p build/debug
+$ cmake -DCMAKE_BUILD_TYPE=Debug -H. -Bbuild/debug
 ```
 Finally build with `make`
 ```
-$ make
+$ cmake --build build/debug
 ```

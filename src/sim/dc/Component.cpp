@@ -9,15 +9,27 @@
 
 using namespace bcircuit::dc;
 
-Component::Component() {
-	// TODO Auto-generated constructor stub
+/* Component::iterator class implementation */
 
+Component::iterator::iterator(Component *component): _current(component) {
+	if (component == nullptr) {
+		throw std::invalid_argument("iterator with nullptr argument");
+	}
 }
 
-Component::~Component() {
-	// TODO Auto-generated destructor stub
-}
+Component::iterator::~iterator() {}
 
-void Component::connect(Component& next, int pin) {
+Component Component::iterator::operator++() {}
+Component Component::iterator::operator++(int) {}
+Component Component::iterator::operator--() {}
+Component Component::iterator::operator--(int) {}
 
-}
+const Component& Component::iterator::operator*() {}
+
+/* Component class implementation */
+
+Component::Component() {}
+
+Component::~Component() {}
+
+void Component::connect(Component& next, int pin) {}

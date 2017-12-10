@@ -38,7 +38,7 @@
 # DIRECTORIES
 #######################################################################
 bin
-build
+**/build
 
 #######################################################################
 # EDITORS / IDEs
@@ -58,7 +58,8 @@ Release
 # BUILD SYSTEM
 #######################################################################
 # cmake
-CMakeCache.txt
-CMakeFiles
-cmake_install.cmake
-Makefile
+**/makefile
+**/Makefile
+**/CMakeCache.txt
+**/CMakeFiles
+**/cmake_install.cmake
