@@ -18,7 +18,7 @@ class Component {
 public:
 	class iterator {
 	public:
-		explicit iterator(Component *component);
+		iterator(Component *component);
 		~iterator();
 
 		Component operator++();

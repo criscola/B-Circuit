@@ -5,7 +5,7 @@
  *      Author: naopross
  */
 
-#include "Component.hpp"
+#include "sim/dc/Component.hpp"
 
 using namespace bcircuit::dc;
 
@@ -33,3 +33,6 @@ Component::Component() {}
 Component::~Component() {}
 
 void Component::connect(Component& next, int pin) {}
+void Component::disconnect(Component& comp, int pin) {}
+
+double Component::current(int pin) const {}

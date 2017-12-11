@@ -5,7 +5,7 @@
  *      Author: naopross
  */
 
-#include "Resistor.hpp"
+#include "sim/dc/Resistor.hpp"
 
 namespace bcircuit {
 namespace dc {
