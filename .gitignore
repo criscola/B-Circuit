@@ -49,6 +49,9 @@ bin
 # Eclipse
 Debug
 Release
+.cproject
+.project
+.settings
 
 # VS
 **.sln
@@ -57,9 +60,10 @@ Release
 **.vs/
 **.vcxproj.user
 
-.cproject
-.project
-.settings
+# sublime text
+*.sublime-workspace
+*.sublime-project
+
 
 #######################################################################
 # BUILD SYSTEM
