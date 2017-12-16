@@ -18,7 +18,7 @@ class Component {
 public:
 	class iterator {
 	public:
-		iterator(Component *component);
+		iterator();
 		~iterator();
 
 		Component operator++();
@@ -27,21 +27,21 @@ public:
 		Component operator--(int);
 
 		const Component& operator*();
-
-	private:
-		Component *_current;
 	};
 
 	Component();
 	virtual ~Component();
 
-	void connect(Component& next, int pin);
-	void disconnect(Component& comp, int pin);
+	virtual void connect(Component& next, int pin);
+	virtual void disconnect(Component& comp, int pin);
 
 	virtual double current(int pin) const;
 
 private:
 	std::map<int, std::pair<bool, std::vector<Component*>>> _connections;
+
+//	std::map<int, std::vector<Component*>> _inputs;
+//	std::map<int, std::vector<Component*>> _outputs;
 };
 
 } /* namespace dc */
