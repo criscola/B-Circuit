@@ -12,6 +12,8 @@ set(B-Circuit_VERSION_MINOR 1)
 #######################################################################
 # Compiler settings
 
+set(CMAKE_CXX_STANDARD 11)
+
 # debug
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall")
 
@@ -33,7 +35,7 @@ add_executable(B-Circuit ${SOURCES})
 #######################################################################
 # Tests
 
-add_subdirectory(tests)
+#add_subdirectory(tests)
 
-enable_testing()
-add_test(B-Circuit-tests tests/B-Circuit-tests)
+#enable_testing()
+#add_test(B-Circuit-tests tests/B-Circuit-tests)
