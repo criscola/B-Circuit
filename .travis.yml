@@ -2,3 +2,10 @@ language: cpp
 compiler: gcc
 script: 
   - ./etc/linux-build.sh
+notifications:
+  email:
+    recipients:
+      - ${naoki_notify_mail}
+      - ${cris_notify_email}
+    on_success: always
+    on_failure: always 
