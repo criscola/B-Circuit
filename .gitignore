@@ -49,6 +49,9 @@ bin
 # Eclipse
 Debug
 Release
+.cproject
+.project
+.settings
 
 # VS
 **.sln
@@ -57,16 +60,26 @@ Release
 **.vs/
 **.vcxproj.user
 
-.cproject
-.project
-.settings
+# sublime text
+*.sublime-workspace
+*.sublime-project
+
 
 #######################################################################
 # BUILD SYSTEM
 #######################################################################
+# binary
+B-Circuit
+B-Circuit.exe
+
 # cmake
 **/makefile
 **/Makefile
-**/CMakeCache.txt
 **/CMakeFiles
+**/CmakeScripts
+**/CMakeCache.txt
+**/Testing
+**/install_manifest.txt
 **/cmake_install.cmake
+**/compile_commands.json
+**/CTestTestfile.cmake

@@ -20,6 +20,10 @@ file(GLOB_RECURSE SOURCES ${CMAKE_SOURCE_DIR} "src/*.cpp")
 ## Executable
 add_executable(B-Circuit ${SOURCES})
 
+## Toolchain
+# enable useful output for linters
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 
 
 #######################################################################
